@@ -110,3 +110,32 @@
     }
 
 }
+
+.ex-12-button:hover .ex-12-bottom-white{
+   animation: whitespot 1s linear;
+}
+
+@keyframes whitespot{
+    0% {
+        right: 20%;
+    }
+
+    100% {
+        right: calc(100% - 60px);
+    }
+}
+
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: whitespot-top 1s alternate;
+ }
+ 
+ @keyframes whitespot-top{
+     0% {
+         left: 10%;
+     }
+ 
+     100% {
+        left: calc(100% - 60px);
+     }
+ }
